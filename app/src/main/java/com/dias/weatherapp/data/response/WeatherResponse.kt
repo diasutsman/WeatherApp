@@ -20,3 +20,15 @@ data class WeatherResponse(
     val main: Main? = null,
 
     )
+
+data class Main(
+
+    @field:SerializedName("temp_min")
+    val tempMin: Double? = null,
+
+    @field:SerializedName("temp")
+    val temp: Double? = null,
+
+    @field:SerializedName("temp_max")
+    val tempMax: Double? = null,
+)

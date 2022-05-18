@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/color_cursor.xml" value="0.119" />
-        <entry key="..\:/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.12047101449275362" />
+        <entry key="..\:/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_broken_image.xml" value="0.119" />
+        <entry key="..\:/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/row_item_weather.xml" value="0.17552083333333332" />
       </map>
     </option>

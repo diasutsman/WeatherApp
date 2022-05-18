@@ -35,7 +35,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures{
-        viewBinding = true
+        viewBinding true
     }
 }
 
@@ -58,4 +58,7 @@ dependencies {
     // glide
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     kapt 'com.github.bumptech.glide:compiler:4.13.0'
+
+    // fused location
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
 }

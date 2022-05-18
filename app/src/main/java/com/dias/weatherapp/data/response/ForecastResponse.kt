@@ -36,30 +36,6 @@ data class WeatherItem(
 	val id: Int? = null,
 )
 
-data class Rain(
-
-	@field:SerializedName("3h")
-	val jsonMember3h: Double? = null,
-)
-
-data class Sys(
-
-	@field:SerializedName("pod")
-	val pod: String? = null,
-)
-
-data class Wind(
-
-	@field:SerializedName("deg")
-	val deg: Int? = null,
-
-	@field:SerializedName("speed")
-	val speed: Double? = null,
-
-	@field:SerializedName("gust")
-	val gust: Double? = null,
-)
-
 data class ListItem(
 
 	@field:SerializedName("dt_txt")
@@ -70,16 +46,4 @@ data class ListItem(
 
 	@field:SerializedName("main")
     val main: Main? = null,
-)
-
-data class Main(
-
-	@field:SerializedName("temp_min")
-	val tempMin: Double? = null,
-
-	@field:SerializedName("temp")
-	val temp: Double? = null,
-
-	@field:SerializedName("temp_max")
-	val tempMax: Double? = null,
 )

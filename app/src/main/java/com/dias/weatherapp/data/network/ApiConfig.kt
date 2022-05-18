@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 /**
- * fyi BuildConfig is the same as .env file
+ * fyi BuildConfig is the same as .env file in node js project
  */
 
 class ApiConfig {
