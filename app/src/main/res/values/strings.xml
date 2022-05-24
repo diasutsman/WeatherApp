@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Weather App</string>
-    <string name="content_image_background_page">Background page by weather</string>
     <string name="temp_format">%.2f°C</string>
     <string name="max_degree">Max: %.2f°C</string>
     <string name="min_degree">Min: %.2f°C</string>
-    <string name="img_icon_desc">Images Icon by Current Weather</string>
+
+    <string name="content_bg_based_current_weather">Background based on current today\'s weather</string>
+    <string name="content_icon_based_on_weather">Icon based on weather</string>
+    <string name="content_image_icon_search">Image icon search</string>
+    <string name="content_image_item_weather">Image item weather</string>
 </resources>

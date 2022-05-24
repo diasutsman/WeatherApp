@@ -83,6 +83,7 @@ class MainActivity : AppCompatActivity() {
                 .placeholder(R.drawable.ic_broken_image)
                 .error(R.drawable.ic_broken_image)
                 .into(binding.imgIcWeather)
+            setBackgroundBasedOnWeather(it.weather?.get(0)?.id, it.weather?.get(0)?.icon)
         }
 
         forecastResponse?.let {
@@ -90,6 +91,32 @@ class MainActivity : AppCompatActivity() {
                 adapter = forecastAdapter
                 forecastAdapter.setData(it)
             }
+        }
+
+
+    }
+
+    private fun setBackgroundBasedOnWeather(weatherId: Int?, icon: String?) {
+        weatherId?.let {
+            val background = when (weatherId) {
+                in resources.getIntArray(R.array.thunderstorm_id_list) -> R.drawable.thunderstorm
+                in resources.getIntArray(R.array.drizzle_id_list) -> R.drawable.drizzle
+                in resources.getIntArray(R.array.rain_id_list) -> R.drawable.rain
+                in resources.getIntArray(R.array.freezing_rain_id_list) -> R.drawable.freezing_rain
+                in resources.getIntArray(R.array.snow_id_list) -> R.drawable.snow
+                in resources.getIntArray(R.array.sleet_id_list) -> R.drawable.sleet
+                in resources.getIntArray(R.array.clear_id_list) -> if (icon == "01d") R.drawable.clear else R.drawable.clear_night
+                in resources.getIntArray(R.array.clouds_id_list) -> R.drawable.lightcloud
+                in resources.getIntArray(R.array.heavy_clouds_id_list) -> R.drawable.heavycloud
+                in resources.getIntArray(R.array.fog_id_list) -> R.drawable.fog
+                in resources.getIntArray(R.array.sand_id_list) -> R.drawable.sand
+                in resources.getIntArray(R.array.dust_id_list) -> R.drawable.dust
+                in resources.getIntArray(R.array.volcanic_ash_id_list) -> R.drawable.volcanic
+                in resources.getIntArray(R.array.squalls_id_list) -> R.drawable.squalls
+                in resources.getIntArray(R.array.tornado_id_list) -> R.drawable.tornado
+                else -> R.drawable.clear // added for safety
+            }
+            Glide.with(this).load(background).into(binding.imgBgWeather)
         }
     }
 

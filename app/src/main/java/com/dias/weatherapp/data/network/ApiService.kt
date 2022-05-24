@@ -19,7 +19,7 @@ interface ApiService {
     fun getForecastByCity(
         @Query("q") city: String,
         @Query("appid") appId: String? = API_KEY,
-        @Query("units") units: String? = "metric"
+        @Query("units") units: String? = "metric" // return in celcius
     ): Call<ForecastResponse>
 
     // call this function when app first time open

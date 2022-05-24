@@ -37,6 +37,7 @@
             android:layout_height="75dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_icon_weather"
             android:backgroundTint="@color/gray"
             android:gravity="center"
             app:layout_constraintBottom_toTopOf="@id/tv_max_degree"
@@ -45,6 +46,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_item_time">
 
             <ImageView
+                android:contentDescription="@string/content_image_item_weather"
                 android:id="@+id/img_item_weather"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
