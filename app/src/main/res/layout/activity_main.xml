@@ -8,7 +8,6 @@
     tools:context=".ui.MainActivity">
 
     <ImageView
-
         android:id="@+id/img_bg_weather"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -54,6 +53,7 @@
         android:textColor="@color/white"
         android:textSize="38sp"
         android:textStyle="bold"
+
         app:layout_constraintTop_toBottomOf="@id/tv_degree"
         tools:text="City" />
 
